@@ -1,0 +1,10 @@
+node_modules/
+main.js
+*.log
+.DS_Store
+
+# 插件运行时配置（含 API key），绝不提交
+data.json
+
+# Claude Code 本地配置，不提交
+.claude/

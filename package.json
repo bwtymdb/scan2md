@@ -1,0 +1,21 @@
+{
+  "name": "scan2md",
+  "version": "0.1.0",
+  "description": "用手机扫码拍照，把书本内容转成 Markdown 笔记存进 Obsidian。",
+  "main": "main.js",
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "node esbuild.config.mjs production",
+    "typecheck": "tsc -noEmit -skipLibCheck"
+  },
+  "dependencies": {
+    "qrcode-generator": "^1.4.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "esbuild": "^0.20.0",
+    "obsidian": "^1.4.16",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.0"
+  }
+}

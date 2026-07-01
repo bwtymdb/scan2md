@@ -1,0 +1,64 @@
+/* scan2MD —— Obsidian 内的二维码弹窗样式（手机端网页自带内联样式） */
+
+.scan2md-qr-modal {
+  max-width: 380px;
+}
+
+.scan2md-qr-modal .scan2md-qr-svg {
+  display: flex;
+  justify-content: center;
+  margin: 12px 0;
+  background: #fff;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.scan2md-qr-modal .scan2md-qr-svg svg {
+  width: 240px;
+  height: 240px;
+}
+
+.scan2md-qr-modal .scan2md-url {
+  font-family: var(--font-monospace);
+  font-size: 13px;
+  word-break: break-all;
+  padding: 8px;
+  border-radius: 6px;
+  background: var(--background-secondary);
+  margin-bottom: 12px;
+}
+
+.scan2md-qr-modal .scan2md-btnrow {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.scan2md-qr-modal .scan2md-warn {
+  color: var(--text-warning);
+  font-size: 13px;
+  background: var(--background-secondary);
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.scan2md-qr-modal .scan2md-iprow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.scan2md-qr-modal .scan2md-iprow select {
+  flex: 1;
+}
+
+.scan2md-qr-modal .scan2md-manual {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.scan2md-qr-modal .scan2md-manual input {
+  flex: 1;
+}
