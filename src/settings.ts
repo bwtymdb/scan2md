@@ -55,7 +55,7 @@ export class Scan2mdSettingTab extends PluginSettingTab {
     const preset = PROVIDER_PRESETS[s.provider];
     containerEl.empty();
 
-    containerEl.createEl("h3", { text: "识别引擎" });
+    new Setting(containerEl).setName("识别引擎").setHeading();
 
     new Setting(containerEl)
       .setName("服务商")
@@ -179,10 +179,10 @@ export class Scan2mdSettingTab extends PluginSettingTab {
           await this.plugin.saveSettings();
         });
         ta.inputEl.rows = 5;
-        ta.inputEl.style.width = "100%";
+        ta.inputEl.setCssStyles({ width: "100%" });
       });
 
-    containerEl.createEl("h3", { text: "笔记与存储" });
+    new Setting(containerEl).setName("笔记与存储").setHeading();
 
     new Setting(containerEl)
       .setName("输出文件夹")
@@ -234,7 +234,7 @@ export class Scan2mdSettingTab extends PluginSettingTab {
         })
       );
 
-    containerEl.createEl("h3", { text: "网络与图片" });
+    new Setting(containerEl).setName("网络与图片").setHeading();
 
     new Setting(containerEl)
       .setName("本地端口")

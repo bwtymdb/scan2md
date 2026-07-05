@@ -106,11 +106,15 @@ export class QrModal extends Modal {
       const qr = qrcode(0, "M");
       qr.addData(url);
       qr.make();
-      this.svgWrap.innerHTML = qr.createSvgTag({
+      const svgStr = qr.createSvgTag({
         cellSize: 4,
         margin: 4,
         scalable: true,
       });
+      this.svgWrap.empty();
+      this.svgWrap.appendChild(
+        new DOMParser().parseFromString(svgStr, "image/svg+xml").documentElement
+      );
     } catch (e: any) {
       this.svgWrap.createEl("div", {
         text: "二维码生成失败：" + (e?.message || e),

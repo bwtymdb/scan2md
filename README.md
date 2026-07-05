@@ -1,5 +1,7 @@
 # Scan to Markdown
 
+> **English**: Scan book pages, formulas, and tables with your phone; a vision LLM converts them into structured Markdown written directly into your Obsidian notes (cursor position or new note). Desktop only. Supports Claude / Gemini / OpenAI / Qwen / GLM / Doubao / Kimi / ERNIE / Hunyuan. Your API key stays local; photos are sent only to your chosen LLM provider; no telemetry.
+
 用手机扫码拍照，把书本、公式、表格等内容转成结构化 Markdown，直接写进 Obsidian 笔记。
 
 手机和电脑连同一个 WiFi，在 Obsidian 里打开扫码面板 → 手机扫码进入拍照网页 →

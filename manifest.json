@@ -1,11 +1,10 @@
 {
   "id": "scan-to-markdown",
   "name": "Scan to Markdown",
-  "version": "0.1.1",
-  "minAppVersion": "1.4.0",
-  "description": "用手机扫码拍照，经 LLM 视觉模型把书本/公式/表格内容转成 Markdown，直接写入当前笔记光标处或另存为新笔记。",
+  "version": "0.1.2",
+  "minAppVersion": "1.4.10",
+  "description": "用手机扫码拍照，经 LLM 视觉模型把书本/公式/表格内容转成 Markdown，直接写入当前笔记光标处或另存为新笔记.",
   "author": "swift",
   "authorUrl": "https://github.com/bwtymdb",
-  "repository": "bwtymdb/scan2md",
   "isDesktopOnly": true
 }

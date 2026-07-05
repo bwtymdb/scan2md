@@ -27,7 +27,7 @@ export class CaptureServer {
     return new Promise((resolve, reject) => {
       const srv = http.createServer((req, res) => {
         // 不 await：每个请求独立处理，异常在内部捕获
-        this.handle(req, res);
+        void this.handle(req, res);
       });
       srv.on("error", reject);
       srv.listen(port, "0.0.0.0", () => {

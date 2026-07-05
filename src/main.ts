@@ -52,9 +52,9 @@ export default class Scan2mdPlugin extends Plugin {
     });
   }
 
-  async onunload(): Promise<void> {
+  onunload(): void {
     if (this.server) {
-      await this.server.stop();
+      void this.server.stop();
       this.server = null;
     }
   }
