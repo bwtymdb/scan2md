@@ -1,6 +1,6 @@
 {
   "name": "scan2md",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "用手机扫码拍照，把书本内容转成 Markdown 笔记存进 Obsidian。",
   "main": "main.js",
   "scripts": {
